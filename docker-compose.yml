@@ -15,7 +15,7 @@ services:
     image: owncloud/server:${OWNCLOUD_VERSION}
     restart: always
     ports:
-      - ${HTTP_PORT}:8888
+      - ${HTTP_PORT}:8081
     depends_on:
       - db
       - redis
